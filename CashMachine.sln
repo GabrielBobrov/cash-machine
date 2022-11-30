@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Machine", "Machine", "{2BA006B1-0F9D-4627-9EA2-82CFB6E4DB76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashMachine", "CashMachine\CashMachine.csproj", "{9BF3EA2D-92BF-4D6F-98E5-2751DD4519DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashMachine.Tests", "CashMachine.Tests\CashMachine.Tests.csproj", "{555AEC9F-12DE-4E81-B5A0-948F58A3349B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BF3EA2D-92BF-4D6F-98E5-2751DD4519DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF3EA2D-92BF-4D6F-98E5-2751DD4519DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF3EA2D-92BF-4D6F-98E5-2751DD4519DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF3EA2D-92BF-4D6F-98E5-2751DD4519DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{555AEC9F-12DE-4E81-B5A0-948F58A3349B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{555AEC9F-12DE-4E81-B5A0-948F58A3349B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{555AEC9F-12DE-4E81-B5A0-948F58A3349B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{555AEC9F-12DE-4E81-B5A0-948F58A3349B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9BF3EA2D-92BF-4D6F-98E5-2751DD4519DC} = {2BA006B1-0F9D-4627-9EA2-82CFB6E4DB76}
+		{555AEC9F-12DE-4E81-B5A0-948F58A3349B} = {2BA006B1-0F9D-4627-9EA2-82CFB6E4DB76}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06F3D1CB-1920-4E6F-8B02-D57F28AB36DD}
+	EndGlobalSection
+EndGlobal
