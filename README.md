@@ -4,23 +4,23 @@
 
 ```
 select   
-	         tbl."ReportsTo" as UserReported,
-			     count(tbl."ID"),	
-		       avg("Age")::numeric(2,0)	
-    from   
-	         "tblHierarquia" tbl 		  
-	where 
-	         tbl."ReportsTo" is not null
-    group by 
-	         tbl."ReportsTo"
-	Order By 
-	         tbl."ReportsTo" asc
+	tbl."ReportsTo" as UserReported,
+	count(tbl."ID"),	
+	avg("Age")::numeric(2,0)	
+from   
+	"tblHierarquia" tbl 		  
+where 
+	 tbl."ReportsTo" is not null
+group by 
+	 tbl."ReportsTo"
+Order By 
+	 tbl."ReportsTo" asc
 ```
 #3)a)
 
 ```
 select ve."placa",
-	     cl."nome" 
+       cl."nome" 
 from "Veiculo" ve
 inner join "Cliente" cl on cl.cpf = ve."Cliente_cpf"
 
@@ -30,16 +30,15 @@ inner join "Cliente" cl on cl.cpf = ve."Cliente_cpf"
 
 ```
 select pat."ender",
-	     est."dtEntrada",
-	     est."dtSaida"
+       est."dtEntrada",
+       est."dtSaida"
 from "Patio" pat 
 inner join "Estaciona" est on est."Patio_num" = pat."num"
 where est."Veiculo_placa" = 'BTG-2022'
 
 ```
 
-#4)
---Resposta: b
+#4) b
 
 #5) b
 
