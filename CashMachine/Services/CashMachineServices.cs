@@ -10,15 +10,12 @@ namespace CashMachine.Services
         private const int MINIMUM_MULTIPLE = 10;
 
         public  INotifier _notifier { get; set; }
-        private CashMachineServices(Domains.CashMachine machine, INotifier notifier)
+        private CashMachineServices(INotifier notifier)
         {
-            Machine = machine;
             _notifier = notifier;
         }
 
-        public Domains.CashMachine Machine { get; set; }
-
-        public static CashMachineServices New(Domains.CashMachine machine, INotifier notifier) => new CashMachineServices(machine, notifier);
+        public static CashMachineServices New(INotifier notifier) => new CashMachineServices(notifier);
   
         public Withdraw? GetWithdraw(int withdrawValue, Domains.CashMachine machine)
         {
