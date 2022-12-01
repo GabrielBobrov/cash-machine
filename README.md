@@ -16,7 +16,7 @@ group by
 Order By 
 	 tbl."ReportsTo" asc
 ```
-#3)a)
+# 3)a)
 
 ```
 select ve."placa",
@@ -26,7 +26,7 @@ inner join "Cliente" cl on cl.cpf = ve."Cliente_cpf"
 
 ```
 
-#3)b)
+# 3)b)
 
 ```
 select pat."ender",
@@ -38,10 +38,10 @@ where est."Veiculo_placa" = 'BTG-2022'
 
 ```
 
-#4) b
+# 4) b
 
-#5) b
+# 5) b
 
-#6) a
+# 6) a
 
-#7) d
+# 7) d
