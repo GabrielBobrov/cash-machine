@@ -26,7 +26,7 @@ namespace CashMachine.Services
 
             if (!(withdrawValue % MINIMUM_MULTIPLE == 0))
             {
-                _notifier.Handle(new Notification(ErrorMessages.InvalidWithdrawValue(MINIMUM_MULTIPLE.ToString())));
+                NotifyError(ErrorMessages.InvalidWithdrawValue(MINIMUM_MULTIPLE.ToString()));
                 return null;
             }                
 
@@ -80,7 +80,7 @@ namespace CashMachine.Services
 
             if (withdrawValue > 0)
             {
-                _notifier.Handle(new Notification(ErrorMessages.InvalidNumberBallotsMachine));
+                NotifyError(ErrorMessages.InvalidNumberBallotsMachine);
                 return null;
             }
 
