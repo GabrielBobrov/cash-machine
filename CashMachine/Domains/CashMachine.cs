@@ -1,22 +1,9 @@
 ﻿namespace CashMachine.Domains
 {
-    public class CashMachine
+    public class CashMachine : Base
     {
-
-        public CashMachine(int tenNotes, int twentyNotes, int fiftyNotes, int hundredNotes)
+        public CashMachine(int tenNotes, int twentyNotes, int fiftyNotes, int hundredNotes) : base(tenNotes, twentyNotes, fiftyNotes, hundredNotes)
         {
-            TenNotes = tenNotes;
-            TwentyNotes = twentyNotes;
-            FiftyNotes = fiftyNotes;
-            HundredNotes = hundredNotes;
         }
-
-        public int TenNotes { get; set; }
-
-        public int TwentyNotes { get; set; }
-
-        public int FiftyNotes { get; set; }
-
-        public int HundredNotes { get; set; }
     }
 }
