@@ -9,7 +9,8 @@ namespace CashMachine.Services
     {
         private const int MINIMUM_MULTIPLE = 10;
 
-        public  INotifier _notifier { get; set; }
+        public INotifier _notifier;
+
         private CashMachineServices(INotifier notifier)
         {
             _notifier = notifier;
